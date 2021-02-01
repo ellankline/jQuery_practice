@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .change {
+                background-color: red;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <section>
+            <h1>.hide</h1>
+            <button class="hide">Click Me!</button>
+        </section>
+
+        <section>
+            <h1>.show</h1>
+            <button class="show">Click me, and I'll tell you a secret ;)</button>
+            <p style="display: none" class="secret">I love you!</p>
+        </section>
+
+        <section>
+            <h1>.toggle</h1>
+            <button class="toggle">toggle me!</button>
+            <p class="switch">On</p>
+            <p class="switch" style="display: none">Off</p>
+        </section>
+
+        <section>
+            <h1>.slideDown</h1>
+            <button class="slideDown">Click me!</button>
+            <p style="display: none" class="ad">How'd you like to join another spam list!!!!!!!?????????</p>
+        </section>
+
+        <section>
+            <h1>.slideUp</h1>
+            <button class="slideUp">Click me!</button>
+            <p class="ominous">buh bye!</p>
+        </section>
+
+        <section>
+            <h1>.slideToggle</h1>
+            <button class="slideToggle">Click me!</button>
+            <p class="thereandback">There and back again!</p>
+        </section>
+
+        <section>
+            <h1>.fadeIn</h1>
+            <button class="fadeIn">Click me!</button>
+            <p style="display: none" class="boo">BOO!</p>
+        </section>
+
+        <section>
+            <h1>.fadeOut</h1>
+            <button class="fadeOut">Click me!</button>
+            <p class="tata">Buh BYE</p>
+        </section>
+
+        <section>
+            <h1>.addClass</h1>
+            <button class="addClass">Click me!</button>
+            <p class="bold">I become <strong>ANGRY</strong> </p>
+        </section>
+
+        <section>
+            <h1>.before</h1>
+            <button class="before">Click me!</button>
+            <p class="incomplete">that you misunderstood</p>
+        </section>
+
+        <section>
+            <h1>.after</h1>
+            <button class="after">Click me!</button>
+            <p class="who">Who do I love?</p>
+        </section>
+
+        <section>
+            <h1>.append</h1>
+            <button class="append">Click me!</button>
+            <p class="fear">I am afraid of: </p>
+        </section>
+
+        <section>
+            <h1>.html</h1>
+            <button class="html">Click me!</button>
+            <p class="underpants">I'll <b>show</b> my <i>undercode</i></p>
+        </section>
+
+        <section>
+            <h1>.attr</h1>
+            <button class="attr">Click me for image-width!</button>
+            <img src="https://www.thephoblographer.com/wp-content/uploads/2020/04/WTFStockPhotos26-770x567.jpg" width="300px">
+        </section>
+
+        <section>
+            <h1>.val</h1>
+            <input type="text" value="Type in me then press enter">
+            <button class="val">Enter</button>
+        </section>
+
+        <selection>
+            <h1>.text</h1>
+            <p class="txt">If you want a challenge, click below</p>
+            <button class="text">Click me!</button>
+        </selection>
+
+        <script>
+            $(document).ready(function(){
+                
+                $(".hide").click(function(){
+                    $(this).hide();
+                });
+
+                $(".show").click(function(){
+                    $(".secret").show();
+                });
+
+                $(".toggle").click(function(){
+                    $(".switch").toggle();
+                });
+
+                $(".slideDown").click(function(){
+                    $(".ad").slideDown();
+                });
+
+                $(".slideUp").click(function(){
+                    $(".ominous").slideUp();
+                });
+
+                $(".slideToggle").click(function(){
+                    $(".thereandback").slideToggle();
+                });
+
+                $(".fadeIn").click(function(){
+                    $(".boo").fadeIn();
+                });
+
+                $(".fadeOut").click(function(){
+                    $(".tata").fadeOut();
+                });
+
+                $(".addClass").click(function(){
+                    $(".bold").addClass("change");
+                });
+
+                $(".before").click(function(){
+                    $(".incomplete").before("I think");
+                });
+
+                $(".after").click(function(){
+                    $(".who").after("YOU!");
+                });
+
+                $(".append").click(function(){
+                    $(".fear").append("mascots :(");
+                });
+
+                $(".html").click(function(){
+                    $(".underpants").html("Just kidding!");
+                });
+
+                $(".attr").click(function(){
+                    alert("Image width: " + $("img").attr("width"));
+                });
+
+                $(".val").click(function(){
+                    $("input").val("what did you say?");
+                });
+
+                $(".text").click(function(){
+                    $(".txt").text("had a ball. stuck it to a wall. that's all.") 
+                })
+
+            });
+
+        </script>
+    </body>
+</html>
